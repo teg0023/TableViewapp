@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6716482B85106800D2545B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6716472B85106800D2545B /* NavigationViewController.swift */; };
 		FCF443002B83AFD2005E5B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF442FF2B83AFD2005E5B9D /* AppDelegate.swift */; };
 		FCF443022B83AFD2005E5B9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF443012B83AFD2005E5B9D /* SceneDelegate.swift */; };
 		FCF443042B83AFD2005E5B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF443032B83AFD2005E5B9D /* ViewController.swift */; };
 		FCF443072B83AFD2005E5B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF443052B83AFD2005E5B9D /* Main.storyboard */; };
 		FCF443092B83AFD4005E5B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF443082B83AFD4005E5B9D /* Assets.xcassets */; };
 		FCF4430C2B83AFD4005E5B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF4430A2B83AFD4005E5B9D /* LaunchScreen.storyboard */; };
+		FCF443142B83B03E005E5B9D /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF443132B83B03E005E5B9D /* TableData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC6716472B85106800D2545B /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		FCF442FC2B83AFD2005E5B9D /* TableViewapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF442FF2B83AFD2005E5B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF443012B83AFD2005E5B9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		FCF443082B83AFD4005E5B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF4430B2B83AFD4005E5B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCF4430D2B83AFD4005E5B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCF443132B83B03E005E5B9D /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCC3722C2B86203E0060C0E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCF443132B83B03E005E5B9D /* TableData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCC3722E2B86206C0060C0E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC6716472B85106800D2545B /* NavigationViewController.swift */,
+				FCF443032B83AFD2005E5B9D /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FCF442F32B83AFD2005E5B9D = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +79,8 @@
 			children = (
 				FCF442FF2B83AFD2005E5B9D /* AppDelegate.swift */,
 				FCF443012B83AFD2005E5B9D /* SceneDelegate.swift */,
-				FCF443032B83AFD2005E5B9D /* ViewController.swift */,
+				FCC3722C2B86203E0060C0E2 /* Model */,
+				FCC3722E2B86206C0060C0E2 /* View */,
 				FCF443052B83AFD2005E5B9D /* Main.storyboard */,
 				FCF443082B83AFD4005E5B9D /* Assets.xcassets */,
 				FCF4430A2B83AFD4005E5B9D /* LaunchScreen.storyboard */,
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF443142B83B03E005E5B9D /* TableData.swift in Sources */,
 				FCF443042B83AFD2005E5B9D /* ViewController.swift in Sources */,
 				FCF443002B83AFD2005E5B9D /* AppDelegate.swift in Sources */,
+				FC6716482B85106800D2545B /* NavigationViewController.swift in Sources */,
 				FCF443022B83AFD2005E5B9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +321,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,8 +348,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
